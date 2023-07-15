@@ -3,11 +3,12 @@ import type {AppProps} from 'next/app'
 import React from "react";
 import Layout from "@/components/Layout";
 import Modal from "@/components/Modal";
+import LoginModal from "@/components/modals/LoginModal";
 
 export default function App({Component, pageProps}: AppProps) {
     return (
         <>
-            <Modal isOpen title="Test Modal"/>
+            <LoginModal/>
             <Layout>
                 <Component {...pageProps} />
             </Layout>
