@@ -46,7 +46,7 @@ const SidebarItem: FC<SidebarItemProps> = ({
         items-center
       ">
                 <Icon size={24} color="white"/>
-                <p>
+                <p className='hidden lg:block text-white text-xl'>
                     {label}
                 </p>
             </div>
