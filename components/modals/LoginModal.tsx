@@ -17,8 +17,8 @@ const LoginModal = () => {
         if (isLoading) {
             return;
         }
-        registerModal.onClose()
-        loginModal.onOpen()
+        loginModal.onClose()
+        registerModal.onOpen()
     }, [isLoading, registerModal, loginModal])
 
     const onSubmit = useCallback(async () => {
