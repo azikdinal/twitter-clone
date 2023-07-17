@@ -25,7 +25,7 @@ const Modal: FC<ModalProps> = ({isOpen, onClose, onSubmit, title, body, footer, 
         if (disabled) {
             return
         }
-        onClose()
+        onSubmit()
     }, [disabled, onSubmit])
 
     if (!isOpen) {
